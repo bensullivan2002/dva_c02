@@ -12,7 +12,7 @@ polly = boto3.client(
 )
 
 result = polly.synthesize_speech(
-    Text="Hello world", OutputFormat="mp3", VoiceId="Aditi"
+    Text="Hello world", OutputFormat="mp3", VoiceId="Joanna"
 )
 
 audio = result["AudioStream"].read()
