@@ -1,8 +1,4 @@
 import boto3
-import os
-import dotenv
-
-dotenv.load_dotenv()
 
 polly = boto3.client("polly")
 
