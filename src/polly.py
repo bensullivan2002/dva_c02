@@ -4,12 +4,7 @@ import dotenv
 
 dotenv.load_dotenv()
 
-polly = boto3.client(
-    "polly",
-    region_name="eu-west-2",
-    aws_access_key_id=os.environ["USERNAME"],
-    aws_secret_access_key=os.environ["PASSWORD"],
-)
+polly = boto3.client("polly")
 
 result = polly.synthesize_speech(
     Text="Hello world", OutputFormat="mp3", VoiceId="Joanna"
