@@ -3,7 +3,7 @@ import boto3
 polly = boto3.client("polly")
 
 result = polly.synthesize_speech(
-    Text="Hello, good looking!",
+    Text="Hello good-looking!",
     OutputFormat="mp3",
     VoiceId="Amy",
     Engine="neural",
