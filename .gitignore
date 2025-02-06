@@ -2,3 +2,8 @@
 .env
 **.mp3
 .ruff_cache
+.python-version
+uv.lock
+__pycache__
+.ropeproject
+.venv
